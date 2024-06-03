@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Diary App</string>
+    <string-array name="sort_options">
+        <item>Wszystkie</item>
+        <item>Rodzina</item>
+        <item>Przyjaciele</item>
+        <item>Praca</item>
+        <item>Podróże</item>
+        <item>Zdrowie</item>
+        <item>Hobby</item>
+    </string-array>
+</resources>

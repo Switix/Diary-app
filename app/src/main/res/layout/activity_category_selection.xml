@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Wybierz kategorie"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/categoryFamily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Rodzina"/>
+
+            <RadioButton
+                android:id="@+id/categoryFriends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Przyjaciele" />
+
+            <RadioButton
+                android:id="@+id/categoryWork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Praca" />
+
+            <RadioButton
+                android:id="@+id/categoryTravel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Podróże" />
+
+            <RadioButton
+                android:id="@+id/categoryHealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zdrowie" />
+
+            <RadioButton
+                android:id="@+id/categoryHobby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hobby" />
+
+        </RadioGroup>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="Potwierdź" />
+
+</RelativeLayout>
